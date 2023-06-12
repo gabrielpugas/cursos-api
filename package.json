@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "node ace serve --watch",
-    "build": "node ace build --production",
-    "start": "node server.js",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0 -p ${PORT:-8080}",
     "lint": "eslint . --ext=.ts",
     "format": "prettier --write ."
   },
